@@ -11,7 +11,10 @@ var operationMap = {
   derive: ,*/
 };
 
-// TODO: Do something on the root route <- haha, homophones
+app.get('/', function(req, res) {
+    res.sendFile(path.join(__dirname + '/index.html'));
+});
+
 app.get('/:operation/:data', function(req, res){
   var computation = operationMap[req.params.operation](req.params.data);
   res.send({

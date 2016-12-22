@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>newton</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <style>
+    html, body {
+      width: 100%;
+      height: 100%;
+      padding: 0;
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-color: black;
+      color: white;
+      overflow: hidden;
+    }
+    #center {
+      width: 100%;
+      text-align: center;
+      margin-top: 175px;
+    }
+    #center > h1 {
+      font-size: 35px;
+    }
+    #center > p {
+      font-size: 25px;
+    }
+    .code {
+      width: 42ex;
+      margin: 40px auto;
+      text-align: left;
+    }
+    .code > p {
+      padding-top: 40px;
+      text-align: center;
+    }
+    .code > p > a {
+      color: white;
+    }
+    .code > p > a:visited {
+      color: white;
+    }
+    pre {
+      text-align: left;
+    }
+    </style>
+  </head>
+  <body>
+    <article id="center">
+      <h1>newton</h1>
+      <p>A really micro micro-service for advanced math.</p>
+      <div class="code">
+        Send this:<br>
+        <pre>
+          https://newton.now.sh/factor/x^2-1
+        </pre>
+        Get this:
+        <pre>
+          {
+            "operation":"factor",
+            "expression":"x^2 - 1",
+            "result":"(x - 1) (x + 1)"
+          }
+        </pre>
+        <p><a href="https://github.com/aunyks/newton">See More</a></p>
+      </div>
+    </article>
+  </body>
+</html>
