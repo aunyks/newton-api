@@ -9,7 +9,9 @@ Newton does anything from numerical calculation to symbolic math parsing.
 
 ### Show me
 Let's find the derivative of x^2.
-So, we send a request to the newton url saying just that -> `https://newton.now.sh/derive/x%5E2` (Note the url-encoded '^')
+So, we send a request to the newton url saying just that:
+
+-> `https://newton.now.sh/derive/x%5E2` (Note the url-encoded '^')
 
 Now, we get the following response:
 ```
@@ -31,14 +33,12 @@ Note: `operation` is the math operation that you want to perform. `expression` i
 2. That's it! You'll be returned a JSON object with the operation you requested, the expression you provided, and the result of the operation performed on the expression.
 
 ### View available endpoints below.
-:---------------------------------------------------:
 | Operation |    API Endpoint   |      Response     |
 |:---------:|:-----------------:|:-----------------:|
 | Simplify  | /simplify2^2+2(2) | 8                 |
 | Factor    | /factor/x^2 + 2x  | x (x + 2)         |
 | Derive    | /derive/x^2+2x    | 2 x + 2           |
 | Integrate | /integrate/x^2+2x | 1/3 x^3 + x^2 + c |
-:---------------------------------------------------:
 
 
 
