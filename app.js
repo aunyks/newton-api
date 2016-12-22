@@ -1,5 +1,6 @@
 var express   = require('express');
 var algebrite = require('algebrite');
+var path      = require('path');
 var app       = express();
 
 var operationMap = {
