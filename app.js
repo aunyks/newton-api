@@ -4,18 +4,30 @@ var path      = require('path');
 var app       = express();
 
 var operationMap = {
-  run: algebrite.run,
+  simplify: algebrite.run,
   factor: function(expression){
     return algebrite.factor(expression).toString();
   },
-  /*integrate: ,
-  derive: ,*/
+  /*expand: function(expression){
+    return algebrite.expand(expression);
+  },
+  contract: function(expression){
+    return algebrite.contract(expression).toString();
+  },*/
+  integrate: function(expression){
+    return algebrite.integral(expression).toString() + ' + c';
+  },
+  derive: function(expression){
+    return algebrite.derivative(expression).toString();
+  },
 };
 
+// Send index.html when root route is accessed (<- homophones ftw!)
 app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname + '/index.html'));
 });
 
+// A dynamic API endpoint where we do our busy work
 app.get('/:operation/:data', function(req, res){
   var computation = operationMap[req.params.operation](req.params.data);
   res.send({
