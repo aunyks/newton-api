@@ -14,12 +14,11 @@ var operationMap = {
 // TODO: Do something on the root route <- haha, homophones
 app.get('/:operation/:data', function(req, res){
   var computation = operationMap[req.params.operation](req.params.data);
-  var final = {
+  res.send({
     operation: req.params.operation,
     expression: req.params.data,
     result: computation
-  };
-  res.send(final);
+  });
 });
 
 app.listen(3000, function(){
