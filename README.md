@@ -35,10 +35,10 @@ Note: `operation` is the math operation that you want to perform. `expression` i
 ### View available endpoints below.
 | Operation |    API Endpoint   |      Response     |
 |:---------:|:-----------------:|:-----------------:|
-| Simplify  | /simplify2^2+2(2) | 8                 |
+| Simplify  | /simplify/2^2+2(2) | 8                 |
 | Factor    | /factor/x^2 + 2x  | x (x + 2)         |
 | Derive    | /derive/x^2+2x    | 2 x + 2           |
-| Integrate | /integrate/x^2+2x | 1/3 x^3 + x^2 + c |
+| Integrate | /integrate/x^2+2x | 1/3 x^3 + x^2 + C |
 
 
 

@@ -15,7 +15,7 @@ var operationMap = {
     return algebrite.contract(expression).toString();
   },*/
   integrate: function(expression){
-    return algebrite.integral(expression).toString() + ' + c';
+    return algebrite.integral(expression).toString() + ' + C';
   },
   derive: function(expression){
     return algebrite.derivative(expression).toString();
