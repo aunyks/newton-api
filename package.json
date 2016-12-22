@@ -1,0 +1,31 @@
+{
+  "name": "newton",
+  "version": "0.0.1",
+  "description": "A really micro micro-service for advanced math.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aunyks/newton.git"
+  },
+  "keywords": [
+    "math",
+    "newton",
+    "calculus",
+    "algebra",
+    "geometry",
+    "theory"
+  ],
+  "author": "Gerald Nash",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aunyks/newton/issues"
+  },
+  "homepage": "https://github.com/aunyks/newton#readme",
+  "dependencies": {
+    "algebrite": "^0.2.23",
+    "express": "^4.14.0"
+  }
+}
