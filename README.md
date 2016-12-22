@@ -32,7 +32,7 @@ Note: `:operation` is the math operation that you want to perform. `:expression`
 
 2. That's it! You'll be returned a JSON object with the operation you requested, the expression you provided, and the result of the operation performed on the expression.
 
-### View available endpoints below.
+#### View available endpoints below:
 | Operation |    API Endpoint   |      Response     |
 |:---------:|:-----------------:|:-----------------:|
 | Simplify  | /simplify/2^2+2(2) | 8                 |
