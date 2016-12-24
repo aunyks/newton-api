@@ -44,7 +44,7 @@ Note: `:operation` is the math operation that you want to perform. `:expression`
 To find the tangent line of a function at a certain x value,
 send the request as c|f(x) where c is the given x value and f(x) is the function expression, the separator is a vertical bar '|'. See the table above for an example request.
 
-
+-----------------------------------------------------------------
 Built using Algebrite.
 Licensed under the MIT License
 
