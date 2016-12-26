@@ -39,6 +39,21 @@ var tangent = function(rawData){
   return fpx + ' x + ' + b;
 };
 
+var areaUnder = function(expression){
+  // 1:3|x^4 -> Find the area under the curve
+  // x^4 between x = 1 and x = 3
+  var data = expression.split('|');
+  var range = data[0];
+  var f = data[1];
+  var startX = range.split(':')[0];
+  var endX   = range.split(':')[1];
+  var F = algebrite.integral(f).toString();
+  var Fx1 = parseInt(algebrite.simplify(F.split('x').join(startX)));
+  var Fx2 = parseInt(algebrite.simplify(F.split('x').join(endX)));
+
+  return Fx2 - Fx1;
+};
+
 var operationMap = {
   simplify: algebrite.run,
   factor: function(expression){
@@ -55,7 +70,8 @@ var operationMap = {
   },
   tangent: function(data){
     return tangent(data);
-  }
+  },
+  area: areaUnder
 };
 
 // Send index.html when root route is accessed (<- homophones ftw!)

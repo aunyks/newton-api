@@ -41,8 +41,11 @@ Note: `:operation` is the math operation that you want to perform. `:expression`
 | Integrate | /integrate/x^2+2x | 1/3 x^3 + x^2 + C |
 | Find 0's  | /zeroes/x^2+2x    | [0, -2]           |
 | Find Tangent| /tangent/2lx^3  | 12 x + -16        |
+| Area Under Curve| /area/2:4lx^3| 60               |
 To find the tangent line of a function at a certain x value,
 send the request as c|f(x) where c is the given x value and f(x) is the function expression, the separator is a vertical bar '|'. See the table above for an example request.
+
+To find the area under a function, send the request as c:d|f(x) where c is the starting x value, d is the ending x value, and f(x) is the function under which you want the curve between the two x values.
 
 -----------------------------------------------------------------
 Built using Algebrite.
