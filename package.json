@@ -19,7 +19,8 @@
     "theory"
   ],
   "author": "Gerald Nash",
-  "license": "MIT",
+  "license": "GPLv3",
+  "private": true,
   "bugs": {
     "url": "https://github.com/aunyks/newton/issues"
   },
