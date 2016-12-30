@@ -1,4 +1,4 @@
-# newton
+# newton-api
 ## A really micro micro-service for advanced math.
 Newton does anything from numerical calculation to symbolic math parsing.
 

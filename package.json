@@ -1,5 +1,5 @@
 {
-  "name": "newton",
+  "name": "newton-api",
   "version": "0.0.1",
   "description": "A really micro micro-service for advanced math.",
   "main": "app.js",
