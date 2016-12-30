@@ -1,77 +1,27 @@
 var express   = require('express');
-var algebrite = require('algebrite');
+var newton    = require('newton-lib');
 var path      = require('path');
 var app       = express();
 
-var zeroes = function(oExpression){
-  var _zeroes = [];
-  // x(x+1)(x+2) -> [ x, x+1), x+2) ]
-  expression = oExpression.split(' ').join('').split('(');
-  expression.forEach(function(item){
-    var xIdx = item.indexOf('x');
-    // ax+b=0, so x=-b/a
-    var a = item.substring(xIdx-1, xIdx);
-    var b = item.substring(xIdx+1, xIdx+3);
-
-    if(a === '')
-      a = 1;
-    if(b === '')
-      b = 0;
-    _zeroes.push(-b/a);
-  });
-  if(oExpression.charAt(0) === '(')
-    _zeroes = _zeroes.slice(1);
-  return JSON.stringify(_zeroes);
-};
-
-var tangent = function(rawData){
-  // 2|x^3 -> Find tangent line of x^3 at x = 2
-  var data = rawData.split('|');
-  var x = data[0];
-  var expression = data[1];
-
-  // f(x) - xf'(x) = b
-  var fx = parseInt(algebrite.run(expression.split('x').join(x)));
-  var fp = algebrite.derivative(expression).toString();
-  var fpx = algebrite.run(fp.split('x').join(x));
-  var b = fx - parseInt(x) * parseInt(fpx);
-
-  return fpx + ' x + ' + b;
-};
-
-var areaUnder = function(expression){
-  // 1:3|x^4 -> Find the area under the curve
-  // x^4 between x = 1 and x = 3
-  var data = expression.split('|');
-  var range = data[0];
-  var f = data[1];
-  var startX = range.split(':')[0];
-  var endX   = range.split(':')[1];
-  var F = algebrite.integral(f).toString();
-  var Fx1 = parseInt(algebrite.simplify(F.split('x').join(startX)));
-  var Fx2 = parseInt(algebrite.simplify(F.split('x').join(endX)));
-
-  return Fx2 - Fx1;
-};
-
 var operationMap = {
-  simplify: algebrite.run,
-  factor: function(expression){
-    return algebrite.factor(expression).toString();
+  simplify: newton.simplify,
+  factor: newton.factor,
+  zeroes: newton.zeroes,
+  integrate: newton.integrate,
+  derive: newton.derive,
+  tangent: function(expression){
+    var data = expression.split('|');
+    var at = parseInt(data[0]);
+    var f = data[1];
+    return newton.tangent(f, at);
   },
-  zeroes: function(expression){
-    return zeroes(algebrite.factor(expression).toString());
-  },
-  integrate: function(expression){
-    return algebrite.integral(expression).toString() + ' + C';
-  },
-  derive: function(expression){
-    return algebrite.derivative(expression).toString();
-  },
-  tangent: function(data){
-    return tangent(data);
-  },
-  area: areaUnder
+  area: function(expression){
+    var split = expression.split('|');
+    var f = split[1];
+    var from = split[0].split(':')[0];
+    var to   = split[0].split(':')[1];
+    return '' + newton.areaUnder(f, { start: from, finish: to });
+  }
 };
 
 // Send index.html when root route is accessed (<- homophones ftw!)
