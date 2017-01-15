@@ -27,6 +27,6 @@
   "homepage": "https://github.com/aunyks/newton#readme",
   "dependencies": {
     "express": "^4.14.0",
-    "newton-lib": "^1.0.1"
+    "metadelta": "^1.0.0"
   }
 }

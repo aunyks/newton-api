@@ -1,4 +1,4 @@
-# newton-api
+# newton
 ## A really micro micro-service for advanced math.
 Newton does anything from numerical calculation to symbolic math parsing.
 
@@ -48,7 +48,7 @@ send the request as c|f(x) where c is the given x value and f(x) is the function
 To find the area under a function, send the request as c:d|f(x) where c is the starting x value, d is the ending x value, and f(x) is the function under which you want the curve between the two x values.
 
 -----------------------------------------------------------------
-Built using [newton-lib-js](https://github.com/aunyks/newton-lib-js).
+Built using [metadelta](https://github.com/aunyks/metadelta-js).
 Licensed under the GNU GPLv3 License
 
 Copyright (c) 2016 Gerald Nash

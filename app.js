@@ -1,26 +1,26 @@
 var express   = require('express');
-var newton    = require('newton-lib');
+var metadelta    = require('metadelta');
 var path      = require('path');
 var app       = express();
 
 var operationMap = {
-  simplify: newton.simplify,
-  factor: newton.factor,
-  zeroes: newton.zeroes,
-  integrate: newton.integrate,
-  derive: newton.derive,
+  simplify: metadelta.simplify,
+  factor: metadelta.factor,
+  zeroes: metadelta.zeroes,
+  integrate: metadelta.integrate,
+  derive: metadelta.derive,
   tangent: function(expression){
     var data = expression.split('|');
     var at = parseInt(data[0]);
     var f = data[1];
-    return newton.tangent(f, at);
+    return metadelta.tangent(f, at);
   },
   area: function(expression){
     var split = expression.split('|');
     var f = split[1];
     var from = split[0].split(':')[0];
     var to   = split[0].split(':')[1];
-    return '' + newton.areaUnder(f, { start: from, finish: to });
+    return '' + metadelta.areaUnder(f, { start: from, finish: to });
   }
 };
 
