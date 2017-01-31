@@ -42,6 +42,15 @@ Note: `:operation` is the math operation that you want to perform. `:expression`
 | Find 0's  | /zeroes/x^2+2x    | [0, -2]           |
 | Find Tangent| /tangent/2lx^3  | 12 x + -16        |
 | Area Under Curve| /area/2:4lx^3| 60               |
+| Cosine    | /cos/pi            | -1                 |
+| Sine      | /sin/0            | 0                 |
+| Tangent   | /tan/0            | 0                 |
+| Inverse Cosine    | /arccos/1            | 0                 |
+| Inverse Sine    | /arcsin/0            | 0                 |
+| Inverse Tangent    | /arctan/0            | 0                 |
+| Absolute Value    | /abs/-1            | 1                 |  
+
+*Keep in mind:*
 To find the tangent line of a function at a certain x value,
 send the request as c|f(x) where c is the given x value and f(x) is the function expression, the separator is a vertical bar '|'. See the table above for an example request.
 
@@ -51,4 +60,4 @@ To find the area under a function, send the request as c:d|f(x) where c is the s
 Built using [metadelta](https://github.com/aunyks/metadelta-js).
 Licensed under the GNU GPLv3 License
 
-Copyright (c) 2016 Gerald Nash
+Copyright (c) 2016-2017 Gerald Nash
