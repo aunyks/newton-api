@@ -39,7 +39,7 @@ Note: `:operation` is the math operation that you want to perform. `:expression`
 | Factor    | /factor/x^2 + 2x  | x (x + 2)         |
 | Derive    | /derive/x^2+2x    | 2 x + 2           |
 | Integrate | /integrate/x^2+2x | 1/3 x^3 + x^2 + C |
-| Find 0's  | /zeroes/x^2+2x    | [0, -2]           |
+| Find 0's  | /zeroes/x^2+2x    | [-2, 0]           |
 | Find Tangent| /tangent/2lx^3  | 12 x + -16        |
 | Area Under Curve| /area/2:4lx^3| 60               |
 | Cosine    | /cos/pi            | -1                 |
