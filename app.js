@@ -24,14 +24,25 @@ app.get('/:operation/:data', function(req, res){
 
   } else {
 
-    // The result from passing the data parameter
-    // to the operation function
-    var computation = f(req.params.data);
-    res.send({
-      operation: req.params.operation,
-      expression: req.params.data,
-      result: computation
-    });
+    // Compute the requested calculation and respond.
+    // If we cannot compute it properly (error thrown),
+    // then tell the client
+    try {
+
+      // The result from passing the data parameter
+      // to the operation function
+      var computation = f(req.params.data);
+      res.send({
+        operation: req.params.operation,
+        expression: req.params.data,
+        result: computation
+      });
+    } catch (err) {
+
+      // Let the client know of our inability to
+      // perform the requested calculation
+      res.send({ error: 'Unable to perform calculation' });
+    }
   }
 });
 
