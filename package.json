@@ -1,6 +1,6 @@
 {
   "name": "newton-api",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A really micro micro-service for advanced math.",
   "main": "app.js",
   "scripts": {
@@ -27,6 +27,6 @@
   "homepage": "https://github.com/aunyks/newton#readme",
   "dependencies": {
     "express": "^4.14.1",
-    "metadelta": "^1.0.0"
+    "metadelta": "^1.0.8"
   }
 }

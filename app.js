@@ -39,6 +39,9 @@ app.get('/:operation/:data', function(req, res){
       });
     } catch (err) {
 
+      // Record this error
+      console.log(err);
+
       // Let the client know of our inability to
       // perform the requested calculation
       res.send({ error: 'Unable to perform calculation' });
