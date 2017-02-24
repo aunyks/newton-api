@@ -58,7 +58,7 @@ send the request as c|f(x) where c is the given x value and f(x) is the function
 To find the area under a function, send the request as c:d|f(x) where c is the starting x value, d is the ending x value, and f(x) is the function under which you want the curve between the two x values.
 
 -----------------------------------------------------------------
-Built using [metadelta](https://github.com/aunyks/metadelta-js).
+Built using [metadelta](https://github.com/metadelta/metadelta-core).
 
 Like newton? [Donate Bitcoin](https://coinbase.com/aunyks) to support development!  
 
