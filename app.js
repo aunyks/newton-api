@@ -2,7 +2,7 @@ var app        = require('express')();
 var operations = require('./operations.js');
 var path       = require('path');
 
-// Enable CORS
+// Enable CORS 
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
