@@ -2,6 +2,13 @@ var app        = require('express')();
 var operations = require('./operations.js');
 var path       = require('path');
 
+// Enable CORS
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
+
 // Send index.html when root route is accessed (<- homophones ftw!)
 app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname + '/index.html'));
