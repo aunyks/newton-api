@@ -28,5 +28,9 @@
   "dependencies": {
     "express": "^4.14.1",
     "metadelta": "^1.0.8"
+  },
+  "devDependencies": {
+    "colors": "^1.1.2",
+    "request": "^2.79.0"
   }
 }
