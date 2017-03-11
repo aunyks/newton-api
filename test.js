@@ -30,9 +30,11 @@ function assert(expected, route, name){
 
 // Assert that our functions give the proper output
 // TODO: give functions more than one test case at a time
-
-/*
-  ARITHMETIC FUNCTIONS (including trig)
-*/
 assert('2 x',      'simplify/x+x',     'Simplify');
 assert('x (x + 2)','factor/x^2 + 2x',  'Factor');
+assert('2 x + 2',  'derive/x^2 + 2x',  'Derive');
+assert('1/3 x^3 + x^2', 'integrate/x^2 + 2x', 'Integrate');
+assert([-2, 0], 'zeroes/x^2 + 2x',    'Zeroes');
+assert('12 x + -16', 'tangent/2|x^3', 'Tangent');
+assert('60', 'area/2:4|x^3', 'Area Under Curve');
+assert('3', 'log/2|8', 'Logarithm');
