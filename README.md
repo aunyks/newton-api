@@ -11,7 +11,7 @@ Newton does anything from numerical calculation to symbolic math parsing.
 Let's find the derivative of x^2.
 So, we send a request to the newton url saying just that:
 
--> `https://newton.now.sh/derive/x%5E2` (Note the url-encoded '^')
+-> `https://newton.now.sh/derive/x%5E2` (Note the url-encoded `^`)
 
 Now, we get the following response:
 ```
@@ -55,7 +55,14 @@ Note: `:operation` is the math operation that you want to perform. `:expression`
 To find the tangent line of a function at a certain x value,
 send the request as c|f(x) where c is the given x value and f(x) is the function expression, the separator is a vertical bar '|'. See the table above for an example request.
 
-To find the area under a function, send the request as c:d|f(x) where c is the starting x value, d is the ending x value, and f(x) is the function under which you want the curve between the two x values.
+To find the area under a function, send the request as c:d|f(x) where c is the starting x value, d is the ending x value, and f(x) is the function under which you want the curve between the two x values.  
+
+### What have people made?
+Some cool apps and libraries made with Newton include the following:
+- [Newton Bot](https://twitter.com/aunyks/status/813127765646082050) (Coming soon!)
+- [Newton Python Wrapper](https://github.com/ilevn/aionewton)
+- [Newton Clay Microservice](https://clay.run/services/nicoslepicos/newton-api)
+- Hopefully more to come!
 
 -----------------------------------------------------------------
 Built using [metadelta](https://github.com/metadelta/metadelta-core).
