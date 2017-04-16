@@ -60,7 +60,7 @@ To find the area under a function, send the request as c:d|f(x) where c is the s
 -----------------------------------------------------------------
 Built using [metadelta](https://github.com/metadelta/metadelta-core).
 
-Like newton? [Donate Bitcoin](https://coinbase.com/aunyks) to support development!  
+** Like newton? [Donate Bitcoin](http://aunyks.com/bitcoin) to support development! **  
 
 Licensed under the GNU GPLv3 license.  
 
