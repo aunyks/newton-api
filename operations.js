@@ -1,4 +1,4 @@
-var metadelta = require('metadelta');
+var metadelta = require('@metadelta/core');
 
 module.exports = {
   simplify: metadelta.simplify,
