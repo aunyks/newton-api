@@ -57,6 +57,8 @@ send the request as c|f(x) where c is the given x value and f(x) is the function
 
 To find the area under a function, send the request as c:d|f(x) where c is the starting x value, d is the ending x value, and f(x) is the function under which you want the curve between the two x values.  
 
+To compute fractions, enter expressions as numerator(over)denominator. For example, to process 2/4 you must send in your expression as 2(over)4. The result expression will be in standard math notation (1/2, 3/4).  
+
 ### What have people made?
 Some cool apps and libraries made with Newton include the following:
 - [Newton Bot](https://twitter.com/aunyks/status/813127765646082050) (Coming soon!)

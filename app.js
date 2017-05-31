@@ -38,6 +38,7 @@ app.get('/:operation/:data', function(req, res){
 
       // The result from passing the data parameter
       // to the operation function
+      req.params.data = req.params.data.split('(over)').join('/');
       var computation = f(req.params.data);
       res.send({
         operation: req.params.operation,
