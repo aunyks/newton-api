@@ -64,6 +64,7 @@ Some cool apps and libraries made with Newton include the following:
 - [Newton Bot](https://twitter.com/aunyks/status/813127765646082050) (Coming soon!)
 - [Newton Python Wrapper](https://github.com/ilevn/aionewton)
 - [Newton Clay Microservice](https://clay.run/services/nicoslepicos/newton-api)
+- [PyNewtonMath](https://github.com/benpryke/PyNewtonMath) (Python 3 Wrapper)
 - Hopefully more to come!
 
 -----------------------------------------------------------------
