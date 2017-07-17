@@ -71,7 +71,8 @@ Some cool apps and libraries made with Newton include the following:
 -----------------------------------------------------------------
 Built using [metadelta](https://github.com/metadelta/metadelta-core).
 
-**Like newton? [Donate Bitcoin](http://www.aunyks.com/bitcoin) to support development!**  
+**Like newton? Donate Bitcoin: 1B2cw3ST3KWnVSbKs6U7nqFfKnxJFzQpFt  
+to support development!**  
 
 Licensed under the GNU GPLv3 license.  
 
