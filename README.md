@@ -66,12 +66,14 @@ Some cool apps and libraries made with Newton include the following:
 - [Newton Clay Microservice](https://clay.run/services/nicoslepicos/newton-api)
 - [PyNewtonMath](https://github.com/benpryke/PyNewtonMath) (Python 3 Wrapper)
 - [NewtonMath.js](https://github.com/benpryke/NewtonMath.js) (Native Node.js Wrapper)
+- [goNewton](https://github.com/Jay9596/goNewton) (GoLang Wrapper)
+- [newtonmath](https://github.com/anaskhan96/newtonmath) (Rust Wrapper)
 - Hopefully more to come!
 
 -----------------------------------------------------------------
 Built using [metadelta](https://github.com/metadelta/metadelta-core).
 
-**Like newton? Donate Bitcoin: 1B2cw3ST3KWnVSbKs6U7nqFfKnxJFzQpFt  
+**Like newton? Donate Bitcoin: 38wbJRCVNnDLLZw1WA6rExNx5crGpFG6dk  
 to support development!**  
 
 Licensed under the GNU GPLv3 license.  
