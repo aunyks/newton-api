@@ -2,7 +2,7 @@ var req    = require('request');
 var colors = require('colors');
 
 // Start server
-require('./app.js');
+require('./app.js')
 
 var newtonUrl = 'http://localhost:3000/';
 
