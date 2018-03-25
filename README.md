@@ -72,6 +72,8 @@ Some cool apps and libraries made with Newton include the following:
 
 -----------------------------------------------------------------
 Built using [metadelta](https://github.com/metadelta/metadelta-core).
+## Want to support Newton development?
+Shop at [Bitlit Apparel](https://getabitlit.com)!  
 
 Licensed under the GNU GPLv3 license.  
 
