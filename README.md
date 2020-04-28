@@ -68,6 +68,7 @@ Some cool apps and libraries made with Newton include the following:
 - [NewtonMath.js](https://github.com/benpryke/NewtonMath.js) (Native Node.js Wrapper)
 - [goNewton](https://github.com/Jay9596/goNewton) (GoLang Wrapper)
 - [newtonmath](https://github.com/anaskhan96/newtonmath) (Rust Wrapper)
+- [Newton Telegram Bot](https://t.me/sir_newton_bot)
 - Hopefully more to come!
 
 -----------------------------------------------------------------
