@@ -11,7 +11,7 @@ module.exports = {
   tan: metadelta.tan,
   arccos: metadelta.arccos,
   arcsin: metadelta.arcsin,
-  arctan: metadelta.arcsin,
+  arctan: metadelta.arctan,
   abs: metadelta.abs,
   log: function(expression){
     var base = expression.split('|')[0];

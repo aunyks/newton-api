@@ -38,3 +38,4 @@ assert([-2, 0],         'zeroes/x^2 + 2x',   'Zeroes');
 assert('12 x + -16',    'tangent/2|x^3',     'Tangent');
 assert('60',            'area/2:4|x^3',      'Area Under Curve');
 assert('3',             'log/2|8',           'Logarithm');
+assert('1/4 pi',        'arctan/1',          'Arctan');
