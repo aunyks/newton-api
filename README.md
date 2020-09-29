@@ -11,7 +11,7 @@ Newton does anything from numerical calculation to symbolic math parsing.
 Let's find the derivative of x^2.
 So, we send a request to the newton url saying just that:
 
--> `https://newton.now.sh/derive/x%5E2` (Note the url-encoded `^`)
+-> `https://newton.now.sh/api/v2/derive/x%5E2` (Note the url-encoded `^`)
 
 Now, we get the following response:
 ```
@@ -26,7 +26,7 @@ It's that simple!
 ### Get Started
 1. Send a GET request to newton.
 ```
-https://newton.now.sh/:operation/:expression
+https://newton.now.sh/api/v2/:operation/:expression
 ```
 Note: `:operation` is the math operation that you want to perform. `:expression` is the *url-encoded* math expression on which you want to operate. **View available operation endpoints below!**
 

@@ -4,7 +4,9 @@
   "description": "A really micro micro-service for advanced math.",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "next start",
+    "dev": "next",
+    "build": "next build"
   },
   "repository": {
     "type": "git",
@@ -26,8 +28,11 @@
   },
   "homepage": "https://github.com/aunyks/newton#readme",
   "dependencies": {
+    "@metadelta/core": "^1.1.2",
     "express": "^4.14.1",
-    "@metadelta/core": "^1.1.2"
+    "next": "^9.5.3",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   },
   "devDependencies": {
     "colors": "^1.1.2",
