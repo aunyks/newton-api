@@ -74,11 +74,11 @@ Some cool apps and libraries made with Newton include the following:
 -----------------------------------------------------------------
 Built using [metadelta](https://github.com/metadelta/metadelta-core).
 ## Want to support Newton development?
-Shop at [Bitlit Apparel](https://getabitlit.com)!  
+Shop [MEZCLA](https://mezcla.xyz)!  
 
 Licensed under the GNU GPLv3 license.  
 
-    Copyright (C) 2016-2017  Gerald Nash
+    Copyright (C) 2016-2020  Gerald Nash
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
