@@ -49,7 +49,7 @@ Note: `:operation` is the math operation that you want to perform. `:expression`
 | Inverse Sine    | /arcsin/0            | 0                 |
 | Inverse Tangent    | /arctan/0            | 0                 |
 | Absolute Value    | /abs/-1            | 1                 |  
-| Logarithm | /log/2l8           | 3               |
+| Logarithm | /log/2|8           | 3               |
 
 *Keep in mind:*
 To find the tangent line of a function at a certain x value,
