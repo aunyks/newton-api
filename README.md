@@ -1,4 +1,7 @@
 # newton
+
+[![API Testing](https://img.shields.io/badge/API%20Test-RapidAPI-blue.svg)](https://rapidapi.com/package/Newton/functions?utm_source=NewtonGithub&utm_medium=button&utm_content=Vender_GitHub)
+
 ## A really micro micro-service for advanced math.
 Newton does anything from numerical calculation to symbolic math parsing.
 
